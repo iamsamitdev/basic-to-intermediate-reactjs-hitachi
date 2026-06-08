@@ -835,7 +835,7 @@ function FilterableProductList() {
 ### ติดตั้ง Tailwind CSS v4 กับ Vite
 
 ```bash
-npm install tailwindcss @tailwindcss/vite
+pnpm add tailwindcss @tailwindcss/vite
 ```
 
 แก้ไข `vite.config.ts`:

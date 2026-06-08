@@ -69,6 +69,7 @@ React.js ยังคงเป็นไลบรารีสำหรับพ�
 - **Zustand** และ **Redux Toolkit** — สำหรับการจัดการ State
 - **React Hook Form + Zod** — สำหรับการจัดการและตรวจสอบฟอร์ม
 - **Visual Studio Code** และ **React Developer Tools**
+- **Prisma 7 + PostgreSQL บน Neon** — สำหรับการเชื่อมต่อฐานข้อมูล
 
 ## ภาพรวมหลักสูตร 5 วัน
 
@@ -78,7 +79,7 @@ React.js ยังคงเป็นไลบรารีสำหรับพ�
 | **วันที่ 2** | Component, Props, State, Event และการจัดสไตล์ด้วย Tailwind CSS v4 |
 | **วันที่ 3** | React Hooks เชิงลึก, Side Effects, Custom Hooks และฟีเจอร์ใหม่ของ React 19 |
 | **วันที่ 4** | React Router v7, ฟอร์มด้วย React Hook Form + Zod และ State Management (Zustand / Redux Toolkit) |
-| **วันที่ 5** | TanStack Query, Authentication, Performance, Deployment และ Workshop ปิดท้าย |
+| **วันที่ 5** | TanStack Query, Authentication, Prisma 7 + PostgreSQL (Neon), Performance, Deployment และ Workshop ปิดท้าย |
 
 ---
 
@@ -105,7 +106,7 @@ React.js ยังคงเป็นไลบรารีสำหรับพ�
 
 ### Module 1.3 สร้างโปรเจกต์แรกด้วย Vite + React + TypeScript
 
-- สร้างโปรเจกต์ด้วยคำสั่ง `npm create vite@latest`
+- สร้างโปรเจกต์ด้วยคำสั่ง `pnpm create vite`
 - ทำความเข้าใจโครงสร้างโปรเจกต์ของ Vite
 - ทำความรู้จักไฟล์ `tsconfig.json` และ `vite.config.ts`
 - การรัน Dev Server และการทำงานของ Hot Module Replacement (HMR)
@@ -302,7 +303,18 @@ React.js ยังคงเป็นไลบรารีสำหรับพ�
 - การจัดการ Refresh Token เบื้องต้น
 - การกำหนดสิทธิ์การเข้าถึงตามบทบาท (Role-based Access)
 
-### Module 5.3 การปรับแต่งประสิทธิภาพ (Performance Optimization)
+### Module 5.3 เชื่อมต่อฐานข้อมูลด้วย Prisma 7 + PostgreSQL บน Neon
+
+- รู้จัก Prisma ORM และข้อดีของ Prisma 7 เทียบกับการเขียน SQL ตรง
+- สร้างและตั้งค่า PostgreSQL Database แบบ Serverless บน Neon (neon.tech)
+- ติดตั้ง Prisma 7 และเชื่อมต่อกับ Neon ด้วย Connection String
+- เขียน Prisma Schema — กำหนด Model, Field Types และ Relations
+- รัน Migration ด้วย `pnpm prisma migrate dev` เพื่อสร้าง Table บน Neon
+- ใช้งาน Prisma Client — CRUD Operations (`findMany`, `create`, `update`, `delete`)
+- สร้าง API Endpoint เบื้องต้นเพื่อให้ React Frontend เรียกใช้ข้อมูลจาก Neon
+- แนวทาง Environment Variables — เก็บ `DATABASE_URL` อย่างปลอดภัย
+
+### Module 5.4 การปรับแต่งประสิทธิภาพ (Performance Optimization)
 
 - การใช้งาน `React.memo`
 - `useMemo` และ `useCallback` ในบริบทของ Performance
@@ -310,7 +322,7 @@ React.js ยังคงเป็นไลบรารีสำหรับพ�
 - การวิเคราะห์ขนาด Bundle
 - React Compiler กับการลด Manual Memoization
 
-### Module 5.4 Error Handling และ Best Practices
+### Module 5.5 Error Handling และ Best Practices
 
 - การใช้งาน Error Boundaries
 - การจัดโครงสร้างโปรเจกต์ที่ดี (Feature-based Structure)
@@ -319,16 +331,16 @@ React.js ยังคงเป็นไลบรารีสำหรับพ�
 - การนำ ESLint / Prettier มาใช้ใน Workflow
 - (เกริ่นนำ) การทดสอบด้วย Vitest + React Testing Library
 
-### Module 5.5 การ Build และ Deployment
+### Module 5.6 การ Build และ Deployment
 
-- การ Build โปรเจกต์ด้วย Vite (`npm run build`)
+- การ Build โปรเจกต์ด้วย Vite (`pnpm build`)
 - การ Preview Production Build
 - การ Deploy ขึ้น Vercel
 - การ Deploy ขึ้น Netlify และ Cloudflare Pages
 - การตั้งค่า Environment Variables บน Hosting
 - แนวคิด CI/CD เบื้องต้น
 
-### Module 5.6 Workshop / โปรเจกต์ปิดท้าย (Capstone Project)
+### Module 5.7 Workshop / โปรเจกต์ปิดท้าย (Capstone Project)
 
 - **โจทย์:** พัฒนาแอปพลิเคชัน CRUD แบบเต็มรูปแบบ (เช่น Task Manager หรือ Mini Blog)
 - ประยุกต์ใช้ Vite + React 19 + TypeScript + Tailwind + React Router

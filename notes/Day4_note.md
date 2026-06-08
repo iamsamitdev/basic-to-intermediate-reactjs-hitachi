@@ -31,7 +31,7 @@ React Router (Client-side Routing):
 ### ติดตั้ง React Router v7
 
 ```bash
-npm install react-router-dom
+pnpm add react-router-dom
 ```
 
 ### การกำหนด Routes พื้นฐาน
@@ -351,7 +351,7 @@ function NaiveForm() {
 ### ติดตั้ง
 
 ```bash
-npm install react-hook-form zod @hookform/resolvers
+pnpm add react-hook-form zod @hookform/resolvers
 ```
 
 ### ทำความเข้าใจ Zod
@@ -642,7 +642,7 @@ export default RegisterPage
 ### ติดตั้ง
 
 ```bash
-npm install zustand
+pnpm add zustand
 ```
 
 ### 🛠️ ตัวอย่างที่ 1: Cart Store
@@ -831,7 +831,7 @@ User Action → dispatch(action) → Reducer → New State → Re-render
 ### ติดตั้ง
 
 ```bash
-npm install @reduxjs/toolkit react-redux
+pnpm add @reduxjs/toolkit react-redux
 ```
 
 ### 🛠️ ตัวอย่าง: Notification Store ด้วย Redux Toolkit

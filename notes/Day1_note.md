@@ -147,13 +147,13 @@ Svelte         →  ~1 ล้านครั้ง/สัปดาห์
 เปิด Terminal แล้วรันคำสั่ง:
 
 ```bash
-npm create vite@latest my-react-app -- --template react-ts
+pnpm create vite my-react-app -- --template react-ts
 ```
 
 หรือสร้างแบบ Interactive (เลือกทีละขั้น):
 
 ```bash
-npm create vite@latest
+pnpm create vite
 ```
 
 ตอบคำถามดังนี้:
@@ -168,13 +168,13 @@ npm create vite@latest
 
 ```bash
 cd my-react-app
-npm install
+pnpm install
 ```
 
 ### 🛠️ ขั้นตอนที่ 3: รัน Development Server
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 เปิด Browser แล้วไปที่ **http://localhost:5173** จะเห็นหน้า React App แรกของคุณ
@@ -297,7 +297,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     port: 5173,    // เปลี่ยน port ได้ที่นี่
-    open: true,    // เปิด Browser อัตโนมัติเมื่อ npm run dev
+    open: true,    // เปิด Browser อัตโนมัติเมื่อ pnpm dev
   },
 })
 ```
@@ -307,7 +307,7 @@ export default defineConfig({
 ติดตั้ง Prettier:
 
 ```bash
-npm install -D prettier eslint-config-prettier
+pnpm add -D prettier eslint-config-prettier
 ```
 
 สร้างไฟล์ `.prettierrc` ที่ root ของโปรเจกต์:
@@ -679,9 +679,9 @@ function List({ items }: { items: string[] }) {
 ### ขั้นตอนที่ 1: สร้างโปรเจกต์ใหม่
 
 ```bash
-npm create vite@latest employee-card -- --template react-ts
+pnpm create vite employee-card -- --template react-ts
 cd employee-card
-npm install
+pnpm install
 ```
 
 ### ขั้นตอนที่ 2: สร้าง Type
@@ -874,7 +874,7 @@ export default App
 ### ขั้นตอนที่ 5: รันและดูผลลัพธ์
 
 ```bash
-npm run dev
+pnpm dev
 ```
 
 เปิด http://localhost:5173 ดูบัตรพนักงาน 3 คน

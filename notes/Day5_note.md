@@ -56,7 +56,7 @@ TanStack Query จัดการให้อัตโนมัติ:
 ### ติดตั้ง
 
 ```bash
-npm install @tanstack/react-query @tanstack/react-query-devtools
+pnpm add @tanstack/react-query @tanstack/react-query-devtools
 ```
 
 ### ตั้งค่า QueryClient
@@ -378,7 +378,7 @@ Payload มี:
 ### 🛠️ สร้าง Auth Context พร้อม Axios
 
 ```bash
-npm install axios
+pnpm add axios
 ```
 
 ```typescript
@@ -653,7 +653,7 @@ function App() {
 
 ```bash
 # ติดตั้ง rollup-plugin-visualizer
-npm install -D rollup-plugin-visualizer
+pnpm add -D rollup-plugin-visualizer
 ```
 
 ```typescript
@@ -675,7 +675,7 @@ export default defineConfig({
 ```
 
 ```bash
-npm run build
+pnpm build
 # หลัง build เสร็จ จะมีไฟล์ dist/stats.html เปิดให้อัตโนมัติ
 # เห็นได้ว่า package ไหนใหญ่ที่สุด
 ```
@@ -883,7 +883,7 @@ src/
 
 ```bash
 # Build สำหรับ Production
-npm run build
+pnpm build
 
 # ผลลัพธ์อยู่ใน dist/
 # dist/
@@ -893,7 +893,7 @@ npm run build
 #     └── index-[hash].css    ← CSS Bundle
 
 # ทดสอบ Production Build ใน Local
-npm run preview
+pnpm preview
 # เปิด http://localhost:4173
 ```
 
@@ -903,7 +903,7 @@ npm run preview
 
 ```bash
 # ติดตั้ง Vercel CLI
-npm install -g vercel
+pnpm add -g vercel
 
 # Login
 vercel login
@@ -934,7 +934,7 @@ vercel --prod
 
 ```bash
 # ติดตั้ง Netlify CLI
-npm install -g netlify-cli
+pnpm add -g netlify-cli
 
 # Login
 netlify login
@@ -946,7 +946,7 @@ netlify deploy --prod --dir=dist
 หรือผ่าน Web Interface:
 1. ไปที่ https://netlify.com → Add new site
 2. Import from GitHub
-3. Build Command: `npm run build`
+3. Build Command: `pnpm build`
 4. Publish Directory: `dist`
 5. Deploy!
 
@@ -1034,12 +1034,12 @@ product-hub/
 ### ขั้นตอนที่ 1: ตั้งค่าโปรเจกต์
 
 ```bash
-npm create vite@latest product-hub -- --template react-ts
+pnpm create vite product-hub -- --template react-ts
 cd product-hub
-npm install
-npm install react-router-dom @tanstack/react-query @tanstack/react-query-devtools
-npm install zustand react-hook-form zod @hookform/resolvers axios
-npm install tailwindcss @tailwindcss/vite
+pnpm install
+pnpm add react-router-dom @tanstack/react-query @tanstack/react-query-devtools
+pnpm add zustand react-hook-form zod @hookform/resolvers axios
+pnpm add tailwindcss @tailwindcss/vite
 ```
 
 ### ขั้นตอนที่ 2: productApi.ts
@@ -1207,10 +1207,10 @@ export default function App() {
 
 ```bash
 # Build
-npm run build
+pnpm build
 
 # ตรวจสอบ
-npm run preview
+pnpm preview
 
 # Deploy Vercel
 vercel --prod
